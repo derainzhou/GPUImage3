@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'GPUImage3'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = '基于BradLarson/GPUImage3自定义版本'
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/derainzhou/GPUImage3'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'ZDerain' => 'derainzhou@gmail.com' }
+    s.author           = { 'DerainZhou' => 'derainzhou@gmail.com' }
     s.source           = { :git => 'https://github.com/derainzhou/GPUImage3.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -35,7 +35,8 @@ Pod::Spec.new do |s|
     s.swift_version = '5.0'
     
     s.source_files = 'GPUImage3/Classes/**/*.{swift}'
-    s.resources = 'GPUImage3/Classes/**/*.{metal}'
+    s.resources = 'GPUImage3/Classes/**/*.{metal, png}'
+    s.private_header_files = 'GPUImage3/Classes/**/*.h'
     s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES', 'OTHER_SWIFT_FLAGS' => "$(inherited) -DGLES"}
 
 end
