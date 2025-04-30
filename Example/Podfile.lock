@@ -1,5 +1,5 @@
 PODS:
-  - GPUImage3 (0.1.0)
+  - GPUImage3 (0.1.1)
 
 DEPENDENCIES:
   - GPUImage3 (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GPUImage3: 696664a53346d1dec25f4d425ef51a7eb10ae241
+  GPUImage3: 563bd31fca9e55f8f4c43a2d46b6b071b1111e55
 
 PODFILE CHECKSUM: 23d3a88ab55a529086925dfee669b66d59a00f38
 

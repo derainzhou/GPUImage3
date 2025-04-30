@@ -34,9 +34,8 @@ Pod::Spec.new do |s|
 
     s.swift_version = '5.0'
     
-    s.source_files = 'GPUImage3/Classes/**/*.{swift}'
-    s.resources = 'GPUImage3/Classes/**/*.{metal, png}'
+    s.source_files = 'GPUImage3/Classes/**/*.swift', 'GPUImage3/Classes/**/*.h'
+    s.resources = 'GPUImage3/Classes/**/*.metal', 'GPUImage3/Assets/**/*.png'
     s.private_header_files = 'GPUImage3/Classes/**/*.h'
     s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES', 'OTHER_SWIFT_FLAGS' => "$(inherited) -DGLES"}
-
 end
